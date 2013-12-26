@@ -11,5 +11,8 @@
     "require": {
         "zendframework/zendframework1": ">=1.10.0"
     },
-    "include-path": ["src/"]
+    "include-path": ["src/"],
+    "autoload": {
+        "files": ["src/Zend_MailJ.php"]
+    }
 }
