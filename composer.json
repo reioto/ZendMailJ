@@ -1,0 +1,15 @@
+{
+    "name": "reioto/zend-mailj",
+    "type": "library",
+    "keywords": [
+        "framework",
+        "zendframework",
+        "mail"
+    ],
+    "description": "Zend Mail for Japanese",
+    "license": "BSD-3-Clause",
+    "require": {
+        "zendframework/zendframework1": ">=1.10.0"
+    }
+    "include-path": ["src/"]
+}
