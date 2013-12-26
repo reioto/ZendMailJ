@@ -10,6 +10,6 @@
     "license": "BSD-3-Clause",
     "require": {
         "zendframework/zendframework1": ">=1.10.0"
-    }
+    },
     "include-path": ["src/"]
 }
