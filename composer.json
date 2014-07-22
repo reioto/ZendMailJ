@@ -9,7 +9,7 @@
     "description": "Zend Mail for Japanese",
     "license": "BSD-3-Clause",
     "require": {
-        "zendframework/zendframework1": ">=1.10.0"
+        "zendframework/zendframework1": ">=1.10.0,<2.0.0"
     },
     "include-path": ["src/"],
     "autoload": {
