@@ -3,20 +3,13 @@ ZendMailJ
 
 Zend Mail でISO-2022-JPのメールを送れるようにしたラップクラスです。
 
-Instllation
+Installation
 -----------
 
 composer
 <pre>
 composer.json
 {
-    "repositories": [
-        { 
-            "type": "git",
-            "url": "https://github.com/reioto/ZendMailJ.git",
-            "reference": "master"
-        }          
-    ],
     "require": {
         "reioto/zend-mailj":"dev-master"
     }
