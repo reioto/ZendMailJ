@@ -41,30 +41,6 @@ class Zend_MailJ extends Zend_Mail
         return parent::setBodyText($txt, $charset, $encoding);
     }
 
-    public function setFrom($email, $name = null)
-    {
-        if ($name !== null) {
-            $name = $this->mbconvert($name);
-        }
-
-        return parent::setFrom($email, $name);
-    }
-
-    public function addTo($email, $name='')
-    {
-        if ($name !== '') {
-            $name = $this->mbconvert($name);
-        }
-
-        return parent::addTo($email, $name);
-    }
-
-    public function setSubject($subject)
-    {
-        $subject = $this->mbconvert($subject);
-        return parent::setSubject($subject);
-    }
-
     /**
      * override
      * @see Zend_Mail
@@ -82,21 +58,5 @@ class Zend_MailJ extends Zend_Mail
         }
 
         return $value;
-    }
-
-
-    /**
-     * Sets Default From-email and name of the message
-     *
-     * @param  string               $email
-     * @param  string    Optional   $name
-     * @return void
-     */
-    public static function setDefaultFrom($email, $name = null)
-    {
-        if ($name !== null) {
-            $name = self::mbconvert($name);
-        }
-        return parent::setDefaultFrom($email, $name);
     }
 }
